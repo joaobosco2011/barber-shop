@@ -17,6 +17,7 @@ body {
 
 
 .home {
+    position: relative;
     background-size: cover;
     height: 100vh;
     background-image: url(../images/bg-home.jpg);
@@ -72,6 +73,15 @@ body {
 .home .banner {
     color: white;
     text-align: center;
+
+    /* CONFIGURAÇÕES PARA POSISIONAR A DIV NO CENTRO DE QUALQUER TELA */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 730px;
+    height: 250px;
+    margin-top: -125px;
+    margin-left: -365px;
 }
 
 .home .banner span {
