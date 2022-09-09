@@ -11,11 +11,20 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
+/****** DIV QUE CENTRALIZA O CONTEÚDO ******/
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
 
+
+
+/****** SECTION_HOME ******/
 .home {
     position: relative;
     background-size: cover;
@@ -26,7 +35,6 @@ body {
 
 
 /****** SECTION_HOME_HEADER ******/
-
 .home .header {
     padding: 30px 0;
 }
@@ -69,7 +77,6 @@ body {
 
 
 /****** SECTION_HOME_BANNER ******/
-
 .home .banner {
     color: white;
     text-align: center;
@@ -102,4 +109,75 @@ body {
 
 .home .banner .slogan_2 {
     margin-bottom: 15px;
+}
+
+
+
+/****** SECTION_ABOUT ******/
+.about {
+    height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+
+
+/****** SECTION_ABOUT_TIMING ******/
+.about .timing {
+    width: 33%;
+    background-image: url(../images/brush-big.jpg);
+    padding: 20px;
+}
+
+.about .timing .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .overlay img {
+    width: 50px;
+}
+
+.about .timing .overlay h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.about .timing .overlay .text {
+    margin: 30px 0;
+}
+
+.about .timing .overlay .text::after {
+    content: '•';
+    font-size: 30px;
+    color: white;
+}
+
+.about .timing .overlay .text:last-of-type:after {
+    content: '|';
+}
+
+.about .timing .overlay .text h4 {
+    color: grey;
+    font-weight: 400;
+}
+
+.about .timing .overlay span {
+    color: white;
+    display: block;
+    padding-bottom: 20px;
+}
+
+
+/****** SECTION_ABOUT_EXPERIENCE ******/
+.about .experience {
+    width: 66%;
 }
